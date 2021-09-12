@@ -42,6 +42,12 @@
          "required": true,
          "value": ""
       
+     },
+      "BOT_ID": {
+         "description": "Your bot ID.. Use any other bot to get it.",
+         "required": true,
+         "value": ""
+      
       },
     "HEROKU_APP_NAME": {
       "description": "Your heroku app name (not compulsory)",
@@ -54,6 +60,12 @@
       "value": "",
       "required": false
       
+      },
+      "MONGO_DB_URI": {
+         "description": "Required for database connections.",
+         "required": true,
+         "value": ""
+     
       },
     "HEROKU_API_KEY": {
       "description": "Your heroku api key (not compulsory)",
