@@ -41,13 +41,7 @@
          "description": "Get API_HASH from my.telegram.org, used for telethon based modules.",
          "required": true,
          "value": ""
-      
-     },
-      "BOT_ID": {
-         "description": "Your bot ID.. Use any other bot to get it.",
-         "required": true,
-         "value": ""
-      
+     
       },
     "HEROKU_APP_NAME": {
       "description": "Your heroku app name (not compulsory)",
@@ -60,13 +54,7 @@
       "value": "",
       "required": false
       
-      },
-      "MONGO_DB_URI": {
-         "description": "Required for database connections.",
-         "required": true,
-         "value": ""
-     
-      },
+     },
     "HEROKU_API_KEY": {
       "description": "Your heroku api key (not compulsory)",
       "value": "",
@@ -82,6 +70,19 @@
          "description": "Your user ID as an integer.",
          "required": true,
          "value": "1548967589"
+      
+      },
+      "MONGO_DB_URI": {
+         "description": "Required for database connections.",
+         "required": true,
+         "value": ""
+      
+      },
+      "MONGO_DB_URI": {
+         "description": "Required for database connections.",
+         "required": true,
+         "value": ""
+      
       },
       "OWNER_USERNAME": {
          "description": "Your username without the @",
