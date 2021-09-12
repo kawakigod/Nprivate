@@ -41,7 +41,12 @@
          "description": "Get API_HASH from my.telegram.org, used for telethon based modules.",
          "required": true,
          "value": ""
-     
+      },
+    "MONGO_URI": {
+      "description": "Create A Database In Mongodb And Get URL",
+      "value": "",
+      "required": true
+      
       },
     "HEROKU_APP_NAME": {
       "description": "Your heroku app name (not compulsory)",
@@ -70,12 +75,6 @@
          "description": "Your user ID as an integer.",
          "required": true,
          "value": "1548967589"
-      
-      },
-      "MONGO_DB_URI": {
-         "description": "Required for database connections.",
-         "required": true,
-         "value": ""
       
       },
       "MONGO_DB_URI": {
