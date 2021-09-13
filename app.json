@@ -76,12 +76,6 @@
          "value": "1548967589"
       
       },
-      "MONGO_DB_URI": {
-         "description": "Required for database connections.",
-         "required": true,
-         "value": ".a"
-      
-      },
       "OWNER_USERNAME": {
          "description": "Your username without the @",
          "value": "Darkridersslk"
