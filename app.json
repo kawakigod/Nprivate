@@ -80,7 +80,7 @@
       "MONGO_DB_URI": {
          "description": "Required for database connections.",
          "required": true,
-         "value": ""
+         "value": ".a"
       
       },
       "OWNER_USERNAME": {
@@ -197,18 +197,12 @@
          "description": "ID of the sticker you want to use when banning people.",
          "required": false,
          "value": ""
-   },
+      },
       "WALL_API": {
          "description": "Required for wallpaper. Get your's from https://wall.alphacoders.com/",
          "required": false,
          "value": ""
-   },      
-      "MONGO_URI": {
-         "description": "Your Mongo DB DataBase Url. .",
-         "required": true,
-         "value": ""
       }
-
    },
    "keywords": [
       "telegram",
@@ -219,4 +213,4 @@
    ],
    "name": "Natsuki",
    "repository": "https://github.com/Sadew451/Natsuki"
-} 
+}
