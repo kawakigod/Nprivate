@@ -72,7 +72,12 @@ Guys. /help to find My list Of Available Commands 🙋‍♂️
 buttons = [
     [
         InlineKeyboardButton(
-            text="Natsuki News 🙋‍♂️", url="https://t.me/Natsuki_Updates"
+            text="Command Help ❓", callback_data="help_back"
+        ),
+    ],
+    [
+        InlineKeyboardButton(
+            text="Natsuki News 🙋‍♀", url="https://t.me/Natsuki_Updates"
         ),
         InlineKeyboardButton(
             text="Support Group 💬", url="https://t.me/NatsukiSupport_Official"
@@ -83,7 +88,7 @@ buttons = [
             text="Source 🗒", url="Github.com/Sadew451"
         ),
         InlineKeyboardButton(
-            text="Command Help ❓", callback_data="help_back"
+            text="Info & About 🙋‍♀", callback_data="aboutmenu
         ),
     ],
     [
