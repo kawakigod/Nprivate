@@ -1,7 +1,7 @@
 from Natsuki import pbot as app
-from Natsuki.pyrograme.errors import capture_err
-from Natsuki.pyrograme.json_prettify import json_prettify
-from Natsuki.pyrograme.fetch import fetch
+from Natsuki.pyrogramee.errors import capture_err
+from Natsuki.pyrogramee.json_prettify import json_prettify
+from Natsuki.pyrogramee.fetch import fetch
 from pyrogram import filters
 
 @app.on_message(filters.command("covid") & ~filters.edited)
