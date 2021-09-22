@@ -2,6 +2,9 @@ import importlib
 from typing import Union
 
 from future.utils import string_types
+from Natsuki import dispatcher
+from Natsuki.modules.helper_funcs.handlers import CMD_STARTERS, SpamChecker
+from Natsuki.modules.helper_funcs.misc import is_module_loaded
 from telegram import ParseMode, Update
 from telegram.ext import (
     CallbackContext,
@@ -12,16 +15,10 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import escape_markdown
 
-from Natsuki import dispatcher
-from Natsuki.modules.helper_funcs.handlers import CMD_STARTERS, SpamChecker
-from Natsuki.modules.helper_funcs.misc import is_module_loaded
-
 FILENAME = __name__.rsplit(".", 1)[-1]
 
 # If module is due to be loaded, then setup all the magical handlers
 if is_module_loaded(FILENAME):
-
-    from telegram.ext.dispatcher import run_async
 
     from Natsuki.modules.helper_funcs.chat_status import (
         connection_status,
@@ -29,6 +26,7 @@ if is_module_loaded(FILENAME):
         user_admin,
     )
     from Natsuki.modules.sql import disable_sql as sql
+    from telegram.ext.dispatcher import run_async
 
     DISABLE_CMDS = []
     DISABLE_OTHER = []
@@ -162,7 +160,7 @@ if is_module_loaded(FILENAME):
         args = context.args
         chat = update.effective_chat
         if len(args) >= 1:
-            disable_module = "DaisyX.modules." + args[0].rsplit(".", 1)[0]
+            disable_module = "HexzyBot.modules." + args[0].rsplit(".", 1)[0]
 
             try:
                 module = importlib.import_module(disable_module)
@@ -237,7 +235,7 @@ if is_module_loaded(FILENAME):
         chat = update.effective_chat
 
         if len(args) >= 1:
-            enable_module = "Natsuki.modules." + args[0].rsplit(".", 1)[0]
+            enable_module = "Sophia.modules." + args[0].rsplit(".", 1)[0]
 
             try:
                 module = importlib.import_module(enable_module)
@@ -340,17 +338,16 @@ if is_module_loaded(FILENAME):
     dispatcher.add_handler(TOGGLE_HANDLER)
 
     __help__ = """
-    ✪ /cmds*:* check the current status of disabled commands
-
+    ~ /cmds*:* check the current status of disabled commands
     *Admins only:*
-    ✪ /enable <cmd name>*:* enable that command
-    ✪ /disable <cmd name>*:* disable that command
-    ✪ /enablemodule <module name>*:* enable all commands in that module
-    ✪ /disablemodule <module name>*:* disable all commands in that module
-    ✪ /listcmds*:* list all possible toggleable commands
+    ~ /enable <cmd name>*:* enable that command
+    ~ /disable <cmd name>*:* disable that command
+    ~ /enablemodule <module name>*:* enable all commands in that module
+    ~ /disablemodule <module name>*:* disable all commands in that module
+    ~ /listcmds*:* list all possible toggleable commands
     """
 
-    __mod_name__ = "Disabling"
+    __mod_name__ = "💞Disable💞"
 
 else:
     DisableAbleCommandHandler = CommandHandler
