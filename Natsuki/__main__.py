@@ -59,6 +59,7 @@ from Natsuki import (
 from Natsuki.modules import ALL_MODULES
 from Natsuki.modules.helper_funcs.alternate import typing_action
 from Natsuki.modules.helper_funcs.chat_status import is_user_admin
+from Natsuki.modules.sudoers import bot_sys_stats
 from Natsuki.modules.helper_funcs.misc import paginate_modules
 from Natsuki.modules.helper_funcs.readable_time import get_readable_time
 
@@ -82,6 +83,12 @@ buttons = [
         ),
         InlineKeyboardButton(
             text="Command Help ❓", callback_data="help_back"
+        ),
+    ],
+    [
+        InlineKeyboardButton(
+            text="System Stats",
+            callback_data="stats_callback",
         ),
     ],
     [
@@ -498,7 +505,11 @@ def Natsuki_about_callback(update, context):
             ),
         )
 
-
+@pbot.on_callback_query(filters.regex("stats_callback"))
+async def stats_callbacc(_, CallbackQuery):
+    text = await bot_sys_stats()
+    await app.answer_callback_query(CallbackQuery.id, text, show_alert=True)
+    
 @run_async
 @typing_action
 def get_help(update, context):
