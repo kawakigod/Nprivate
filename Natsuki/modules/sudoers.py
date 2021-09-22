@@ -1,22 +1,3 @@
-"""
-MIT License
-Copyright (c) 2021 TheHamkerCat
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-"""
 import asyncio
 import os
 import subprocess
@@ -28,10 +9,19 @@ from pyrogram import filters
 from Natsuki import (bot_start_time, DEV_USERS, pbot)
 from Natsuki.utils import formatter
 
+__mod_name__ = "💞Sudoers💞"
+
+__help__ = """
+*Only for group owner:*
+ - /stats - To Check System Status.
+ - /gstats - Comming Soon 
+ - /gban - Comming Soon 
+ - /broadcast - Comming Soon 
+ - /update - Comming Soon 
+"""
 
 
-
-# Stats 
+# Stats Module
 
 
 async def bot_sys_stats():
@@ -41,7 +31,7 @@ async def bot_sys_stats():
     disk = psutil.disk_usage("/").percent
     process = psutil.Process(os.getpid())
     stats = f"""
-root@DarKriDeRssLK:~$ @TheNatsukiBot 
+root@Sadew451:~$ Natsuki 
 ------------------
 UPTIME: {formatter.get_readable_time((bot_uptime))}
 BOT: {round(process.memory_info()[0] / 1024 ** 2)} MB
@@ -49,4 +39,25 @@ CPU: {cpu}%
 RAM: {mem}%
 DISK: {disk}%
 """
-    return 
+    return stats
+
+#@pbot.on_message(
+#    filters.command("broadcast") & filters.user(DEV_USERS) & ~filters.edited
+#)
+#@capture_err
+#async def broadcast_message(_, message):
+#    if len(message.command) < 2:
+#        return await message.reply_text("**Usage**:\n/broadcast [MESSAGE]")
+#    text = message.text.split(None, 1)[1]
+#    sent = 0
+#    chats = []
+#    schats = await get_served_chats()
+#    for chat in schats:
+#        chats.append(int(chat["chat_id"]))
+#    for i in chats:
+#        try:
+#            await app.send_message(i, text=text)
+#            sent += 1
+#        except Exception:
+#            pass
+#    await message.reply_text(f"**Broadcasted Message In {sent} Chats.**")
