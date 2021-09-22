@@ -508,7 +508,7 @@ def Natsuki_about_callback(update, context):
 @pbot.on_callback_query(filters.regex("stats_callback"))
 async def stats_callbacc(_, CallbackQuery):
     text = await bot_sys_stats()
-    await app.answer_callback_query(CallbackQuery.id, text, show_alert=True)
+    await pbot.answer_callback_query(CallbackQuery.id, text, show_alert=True)
     
 @run_async
 @typing_action
