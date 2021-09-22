@@ -85,10 +85,10 @@ buttons = [
             text="Command Help ❓", callback_data="help_back"
         ),
     ],
-    [
+     [
+        InlineKeyboardButton(text="Source Code 🗒️", callback_data="source_"),
         InlineKeyboardButton(
-            text="System Stats",
-            callback_data="stats_callback",
+            text="System Stats 💻", callback_data="stats_callback"
         ),
     ],
     [
