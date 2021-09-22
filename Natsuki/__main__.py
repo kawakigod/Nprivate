@@ -63,21 +63,14 @@ from Natsuki.modules.helper_funcs.misc import paginate_modules
 from Natsuki.modules.helper_funcs.readable_time import get_readable_time
 
 PM_START_TEXT = """
-👋 Hello There, I'm 𝗡𝗮𝘁𝘀𝘂𝗸𝗶. I'm a Powerfull Group Manager Bot With Cool Modules. @TeamNatsuki
-
-Guys. /help to find My list Of Available Commands 🙋‍♂️
-
+👋 Hey There, My Name is 𝗡𝗮𝘁𝘀𝘂𝗸𝗶. 
+I'm a Powerfull Group Manager Bot With Cool Modules. feel free to add me to your groups!
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="Command Help ❓", callback_data="help_back"
-        ),
-    ],
-    [
-        InlineKeyboardButton(
-            text="Natsuki News 🙋‍♀", url="https://t.me/Natsuki_Updates"
+            text="Natsuki News 🙋‍♂️", url="https://t.me/Natsuki_Updates"
         ),
         InlineKeyboardButton(
             text="Support Group 💬", url="https://t.me/NatsukiSupport_Official"
@@ -88,7 +81,7 @@ buttons = [
             text="Source 🗒", url="Github.com/Sadew451"
         ),
         InlineKeyboardButton(
-            text="Info & About 🙋‍♀", callback_data="aboutmenu
+            text="Command Help ❓", callback_data="help_back"
         ),
     ],
     [
@@ -102,10 +95,9 @@ buttons = [
 NATSUKI_IMG = "https://telegra.ph/file/a6281ecaae26667a13716.png"
 
 HELP_STRINGS = f"""
-*ALL Commands :* [❤]()
-
-✨ Every possibility of Natsuki is documentated here.
-🙋‍♀️ Click buttons to get Thanks.
+*𝗔𝗹𝗹 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 :* [](иαтѕυкι)
+ [=] 𝘌𝘷𝘦𝘳𝘺 𝘱𝘰𝘴𝘴𝘪𝘣𝘪𝘭𝘪𝘵𝘺 𝘰𝘧 𝘕𝘢𝘵𝘴𝘶𝘬𝘪 𝘪𝘴 𝘥𝘰𝘤𝘶𝘮𝘦𝘯𝘵𝘢𝘵𝘦𝘥 𝘩𝘦𝘳𝘦.
+ [=] 𝘊𝘭𝘪𝘤𝘬 𝘣𝘶𝘵𝘵𝘰𝘯𝘴 𝘵𝘰 𝘨𝘦𝘵 𝘏𝘦𝘭𝘱.
 """.format(
     dispatcher.bot.first_name,
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
