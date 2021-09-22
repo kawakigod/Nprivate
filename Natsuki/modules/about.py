@@ -12,5 +12,10 @@ Powerful Abilities
 • Channel Music Play 🎵
 
 Developer [SADEW JAYASEKARA](https://t.me/Darkridersslk)
+
+[Natsuki Updates](https://t.me/Natsuki_Updates)
+
+[Natsuki Support](https://t.me/NatsukiSupport_Official)
+
 """
-__mod_name__ = "About ⚡"
+__mod_name__ = "About 🙋‍♀️"
