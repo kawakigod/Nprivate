@@ -56,6 +56,8 @@ from Natsuki import (
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
+# import pbot on __init__.py 
+from Natsuki import pbot
 from Natsuki.modules import ALL_MODULES
 from Natsuki.modules.helper_funcs.alternate import typing_action
 from Natsuki.modules.helper_funcs.chat_status import is_user_admin
