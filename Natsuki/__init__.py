@@ -94,6 +94,7 @@ if ENV:
     HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
     HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
     MONGO_DB_URI = os.environ.get("MONGO_DB_URI")    
+    bot_start_time = time.time()
     
     try:
         WHITELIST_CHATS = set(
