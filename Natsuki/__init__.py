@@ -94,8 +94,6 @@ if ENV:
     HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
     HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
     MONGO_DB_URI = os.environ.get("MONGO_DB_URI")    
-    MOD_LOAD
-    MOD_NOLOAD 
     
     try:
         WHITELIST_CHATS = set(
