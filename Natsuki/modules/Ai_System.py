@@ -355,11 +355,13 @@ async def inuka(client, message):
 
 
 __help__ = """
-<b> Chatbot </b>
-hexzy AI 3.0 IS THE ONLY AI SYSTEM WHICH CAN DETECT & REPLY UPTO 200 LANGUAGES
- - /chatbot [ON/OFF]: Enables and disables AI Chat mode (EXCLUSIVE)
- - /chatbot EN : Enables English only chatbot
+<b> Ai System </b>
+
+Natsuki AI 3.0 IS THE ONLY AI SYSTEM WHICH CAN DETECT & REPLY UPTO 200 LANGUAGES
+
+- /chatbot [ON/OFF]: Enables and disables AI Chat mode (EXCLUSIVE)
+- /chatbot EN : Enables English only chatbot
  
 """
 
-__mod_name__ = "Chatbot"
+__mod_name__ = "Ai System"
