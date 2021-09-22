@@ -9,7 +9,7 @@ from pyrogram import filters
 from Natsuki import (bot_start_time, DEV_USERS, pbot)
 from Natsuki.utils import formatter
 
-__mod_name__ = "💞Sudoers💞"
+__mod_name__ = "Sudoers"
 
 __help__ = """
 *Only for group owner:*
