@@ -78,15 +78,14 @@ buttons = [
         InlineKeyboardButton(
             text="➕ Add Me to your Group ➕",  url="t.me/TheNatsukiBot?startgroup=true",),
     ],
-    [
-        InlineKeyboardButton(text="Info & About 🙋‍♂️", callback_data="aboutmanu_"),
-    ],
+   
     [
         InlineKeyboardButton(
             text="System Stats 💻", callback_data="stats_callback"
         ),
     ],
     [
+        InlineKeyboardButton(text="Info & About 🙋‍♂️", callback_data="aboutmanu_"),
         InlineKeyboardButton(text="Natsuki News 🙋‍♀️", url=f"https://t.me/Natsuki_Updates"),
         InlineKeyboardButton(
             text="Support Group 👥", url=f"https://t.me/NatsukiSupport_Official"
