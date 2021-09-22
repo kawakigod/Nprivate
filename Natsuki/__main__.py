@@ -6,6 +6,8 @@ import time
 import traceback
 from sys import argv
 from typing import Optional
+from pyrogram import filters, idle
+
 
 from telegram import (
     Chat,
