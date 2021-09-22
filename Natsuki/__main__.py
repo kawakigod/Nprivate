@@ -80,7 +80,6 @@ buttons = [
     ],
    
     [
-        InlineKeyboardButton(text="Info & About 🙋‍♂️", callback_data="aboutmanu_"),
         InlineKeyboardButton(
             text="System Stats 💻", callback_data="stats_callback"
         ),
