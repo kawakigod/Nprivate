@@ -17,8 +17,8 @@ from pyrogram.types import (CallbackQuery, InlineKeyboardButton,
                             InputTextMessageContent)
 from search_engine_parser import GoogleSearch
 
-from Natsuki import (BOT_USERNAME, MESSAGE_DUMP_CHAT, SUDOERS, USERBOT_ID,
-                 USERBOT_NAME, USERBOT_USERNAME, app, app2, arq)
+from Natsuki import (BOT_USERNAME, MESSAGE_DUMP_CHAT, DEV_USERS, BOT_ID,
+                 BOT_NAME, BOT_USERNAME, app, app2, arq)
 from Natsuki.core.keyboard import ikb
 from Natsuki.core.tasks import _get_tasks_text, all_tasks, rm_task
 from Natsuki.core.types import InlineQueryResultCachedDocument
@@ -26,7 +26,6 @@ from Natsuki.modules.info import get_chat_info, get_user_info
 from Natsuki.modules.music import download_youtube_audio
 from Natsuki.utils.functions import test_speedtest
 from Natsuki.utils.pastebin import paste
-
 keywords_list = [
     "image",
     "wall",
