@@ -100,6 +100,8 @@ if ENV:
     SUDOERS = os.environ.get("SUDO_USERS_ID", None)
     USERBOT_ID = os.environ.get("USERBOT_ID", None)
     USERBOT_NAME = os.environ.get("USERBOT_NAME", None)
+    USERBOT_USERNAME = os.environ.get("USERBOT_USERNAME", None)
+
     
     try:
         WHITELIST_CHATS = set(
