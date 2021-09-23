@@ -96,7 +96,8 @@ if ENV:
     MONGO_DB_URI = os.environ.get("MONGO_DB_URI")    
     bot_start_time = time.time()
     BOT_USERNAME = os.environ.get("BOT_USERNAME", None)
-
+    MESSAGE_DUMP_CHAT = os.environ.get("MESSAGE_DUMP_CHAT", None)
+    
     try:
         WHITELIST_CHATS = set(
             int(x) for x in os.environ.get("WHITELIST_CHATS", "").split()
