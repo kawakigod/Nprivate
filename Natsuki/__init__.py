@@ -99,6 +99,7 @@ if ENV:
     MESSAGE_DUMP_CHAT = os.environ.get("MESSAGE_DUMP_CHAT", None)
     SUDOERS = os.environ.get("SUDO_USERS_ID", None)
     USERBOT_ID = os.environ.get("USERBOT_ID", None)
+    USERBOT_NAME = os.environ.get("USERBOT_NAME", None)
     
     try:
         WHITELIST_CHATS = set(
