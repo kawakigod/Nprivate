@@ -97,6 +97,7 @@ if ENV:
     bot_start_time = time.time()
     BOT_USERNAME = os.environ.get("BOT_USERNAME", None)
     MESSAGE_DUMP_CHAT = os.environ.get("MESSAGE_DUMP_CHAT", None)
+    SUDOERS = os.environ.get("SUDO_USERS_ID", None)
     
     try:
         WHITELIST_CHATS = set(
