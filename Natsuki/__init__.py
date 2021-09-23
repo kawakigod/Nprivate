@@ -101,6 +101,7 @@ if ENV:
     USERBOT_ID = os.environ.get("USERBOT_ID", None)
     USERBOT_NAME = os.environ.get("USERBOT_NAME", None)
     USERBOT_USERNAME = os.environ.get("USERBOT_USERNAME", None)
+    BOT_NAME = os.environ.get("BOT_NAME", None)
 
     
     try:
