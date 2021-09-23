@@ -95,7 +95,8 @@ if ENV:
     HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
     MONGO_DB_URI = os.environ.get("MONGO_DB_URI")    
     bot_start_time = time.time()
-    
+    BOT_USERNAME = os.environ.get("BOT_USERNAME", None)
+
     try:
         WHITELIST_CHATS = set(
             int(x) for x in os.environ.get("WHITELIST_CHATS", "").split()
