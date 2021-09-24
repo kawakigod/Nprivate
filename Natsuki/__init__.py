@@ -102,8 +102,8 @@ if ENV:
     USERBOT_NAME = os.environ.get("USERBOT_NAME", None)
     USERBOT_USERNAME = os.environ.get("USERBOT_USERNAME", None)
     BOT_NAME = os.environ.get("BOT_NAME", None)
-
-    
+    UPSTREAM_REPO = os.environ.get(
+        "UPSTREAM_REPO", "https://github.com/Sadew451/Natsuki-v2.4"
     try:
         WHITELIST_CHATS = set(
             int(x) for x in os.environ.get("WHITELIST_CHATS", "").split()
