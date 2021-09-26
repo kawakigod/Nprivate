@@ -103,6 +103,7 @@ if ENV:
     USERBOT_USERNAME = os.environ.get("USERBOT_USERNAME", None)
     BOT_NAME = os.environ.get("BOT_NAME", None)
     UPSTREAM_REPO = os.environ.get("UPSTREAM_REPO", None)
+    CMD_HELP = os.environ.get("CMD_HELP", None)
     
     try:
         WHITELIST_CHATS = set(
