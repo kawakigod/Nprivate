@@ -107,7 +107,8 @@ if ENV:
     tbot = TelegramClient(None, API_ID, API_HASH)
     CMD_LIST = os.environ.get("CMD_LIST", None)
     LOAD_PLUG = os.environ.get("LOAD_PLUG", None)
-
+    ubot = TelegramClient(StringSession(STRING_SESSION), API_ID, API_HASH)
+    
     try:
         WHITELIST_CHATS = set(
             int(x) for x in os.environ.get("WHITELIST_CHATS", "").split()
