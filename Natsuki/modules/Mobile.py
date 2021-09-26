@@ -1,4 +1,4 @@
-from julia import CMD_HELP
+from Natsuki import CMD_HELP
 import os
 from Natsuki import tbot
 import json
