@@ -104,7 +104,7 @@ if ENV:
     BOT_NAME = os.environ.get("BOT_NAME", None)
     UPSTREAM_REPO = os.environ.get("UPSTREAM_REPO", None)
     CMD_HELP = os.environ.get("CMD_HELP", None)
-    tbot = TelegramClient(None, API_KEY, API_HASH)
+    tbot = TelegramClient(None, API_ID, API_HASH)
 
     try:
         WHITELIST_CHATS = set(
