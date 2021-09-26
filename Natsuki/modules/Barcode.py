@@ -107,9 +107,3 @@ __help__ = """
  - /barcode <text>: makes a barcode out of the text, crop the barcode if you don't want to reveal the text
 """
 
-CMD_HELP.update({
-    file_helpo: [
-        file_helpo,
-        __help__
-    ]
-})
