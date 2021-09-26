@@ -89,3 +89,4 @@ python-arq
 fuzzysearch
 gitpython==3.1.11
 yt_dlp
+nude
