@@ -106,6 +106,7 @@ if ENV:
     CMD_HELP = os.environ.get("CMD_HELP", None)
     tbot = TelegramClient(None, API_ID, API_HASH)
     CMD_LIST = os.environ.get("CMD_LIST", None)
+    LOAD_PLUG = os.environ.get("LOAD_PLUG", None)
 
     try:
         WHITELIST_CHATS = set(
