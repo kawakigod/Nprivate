@@ -114,12 +114,8 @@ file_help = file_help.replace(".py", "")
 file_helpo = file_help.replace("_", " ")
 
 __help__ = """
- - /specs <brand> <device>: Get device specifications info
+@TheNatsukiBot
+ 
+❍ /specs <brand> <device>: Get device specifications info
 """
-
-CMD_HELP.update({
-    file_helpo: [
-        file_helpo,
-        __help__
-    ]
-})
+__mod_name__ = "Mobile"
