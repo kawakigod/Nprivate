@@ -104,6 +104,8 @@ file_help = file_help.replace(".py", "")
 file_helpo = file_help.replace("_", " ")
 
 __help__ = """
- - /barcode <text>: makes a barcode out of the text, crop the barcode if you don't want to reveal the text
+@TheNatsukiBot
+ 
+❍ - /barcode <text>: makes a barcode out of the text, crop the barcode if you don't want to reveal the text
 """
-
+__mod_name__ = "Barcode"
