@@ -219,3 +219,9 @@ from Natsuki.modules.helper_funcs.handlers import (
 tg.RegexHandler = CustomRegexHandler
 tg.CommandHandler = CustomCommandHandler
 tg.MessageHandler = CustomMessageHandler
+
+try:
+        ubot.start()
+    except BaseException:
+        print("Sed Bra")
+        sys.exit(1)
