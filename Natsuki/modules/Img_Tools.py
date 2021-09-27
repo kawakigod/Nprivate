@@ -28,9 +28,9 @@ from telethon.utils import get_input_location
 sedpath = "./starkgangz/"
 if not os.path.isdir(sedpath):
     os.makedirs(sedpath)
-from julia.Ok import upload_file
+from Natsuki.Ok import upload_file
 DELTA = "https://telegra.ph/file/099688f61c26bc1867bac.jpg"
-from julia.func import convert_to_image, crop_vid, runcmd, tgs_to_gif
+from Natsuki.func import convert_to_image, crop_vid, runcmd, tgs_to_gif
 DANISH = "58199388-5499-4c98-b052-c679b16310f9"
 @register(pattern="^/nfsw")
 async def hmm(event):
