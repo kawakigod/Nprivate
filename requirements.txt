@@ -93,4 +93,3 @@ barcode
 python-barcode==0.13.1
 python-rapidjson==0.9.3
 dateparser==1.0.0
-Natsuki.Config
