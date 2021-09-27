@@ -92,3 +92,4 @@ yt_dlp
 barcode
 python-barcode==0.13.1
 python-rapidjson==0.9.3
+dateparser==1.0.0
