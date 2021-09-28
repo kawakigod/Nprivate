@@ -42,11 +42,17 @@
          "required": true,
          "value": ""
       },
-      "MONGO_URI": {
+      "MONGO_DB_URI": {
          "description": "Create A Database In Mongodb And Get URL",
          "required": true,
          "value": ""
-    },
+      },
+    "BOT_ID": {
+      "description": "Your Bot ID",
+      "value": "",
+      "required": false 
+     
+      },
     "HEROKU_APP_NAME": {
       "description": "Your heroku app name (not compulsory)",
       "value": "",
